@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="{% url 'home' %}">Главная</a>
+    {% for task in tasks %}
+        <table>
+            <td><a href="{% url 'not_done' task.id %}">✔️</a></td>
+            <td>{{task.title}}</td>
+        </table>
+    {% endfor %}
+<button><a href="{% url 'del_done' %}">К чертям</a></button>
+</body>
+</html>

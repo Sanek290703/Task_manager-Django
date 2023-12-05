@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{% url 'home' %}">Главная</a>
+    <a > | </a>
+    <a href="{% url 'tasks' category_id %}">Назад</a>
+    <h2>{{task.title}}</h2>
+    <p>{{task.description}}</p>
+    <h5>{{task.task_date}}</h5>
+</body>
+</html>
